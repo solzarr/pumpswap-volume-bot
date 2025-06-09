@@ -1,12 +1,11 @@
 {
   "version": "1.0.0",
-  "main": "index.ts",
+  "author": "Rabnail-SOL",
+  "main": "index.js",
   "scripts": {
-    "start": "ts-node ./index.ts",
-    "build": "tsc"
+    "start": "node ./index.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
