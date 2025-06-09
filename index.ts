@@ -3,7 +3,7 @@ import { tokenMint, keypair } from './constants'
 
 pumpSwapBuy(keypair, tokenMint, 0.001)
   .then(() => {
-    pumpSwapSell(keypair, tokenMint, 100, 6).catch((e) => {
+    pumpSwapSell(keypair, tokenMint, 1, 6).catch((e) => {
       console.log("Error in selling token")
     })
   }).catch((e) => {

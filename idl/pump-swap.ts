@@ -49,7 +49,39 @@ export type PumpSwapIDL = {
                         ]
                     }
                 },
-                { "name": "program" }
+                { "name": "program" }, 
+                {
+                    "name": "coinCreatorVaultAta",
+                    "writable": true,
+                    "pda": {
+                        "seeds": [{
+                            "kind": "account",
+                            "path": "coinCreatorVaultAuthority"
+                        }, {
+                            "kind": "account",
+                            "path": "quoteTokenProgram"
+                        }, {
+                            "kind": "account",
+                            "path": "quoteMint"
+                        }],
+                        "program": {
+                            "kind": "const",
+                            "value": [140, 151, 37, 143, 78, 36, 137, 241, 187, 61, 16, 41, 20, 142, 13, 131, 11, 90, 19, 153, 218, 255, 16, 132, 4, 142, 123, 216, 219, 233, 248, 89]
+                        }
+                    }
+                }, {
+                    "name": "coinCreatorVaultAuthority",
+                    "pda": {
+                        "seeds": [{
+                            "kind": "const",
+                            "value": [99, 114, 101, 97, 116, 111, 114, 95, 118, 97, 117, 108, 116]
+                        }, {
+                            "kind": "account",
+                            "path": "pool.coinCreator",
+                            "account": "Pool"
+                        }]
+                    }
+                }
             ],
             "args": [
                 { "name": "baseAmountOut", "type": "u64" },
@@ -303,7 +335,39 @@ export type PumpSwapIDL = {
                         ]
                     }
                 },
-                { "name": "program" }
+                { "name": "program" }, 
+                {
+                    "name": "coinCreatorVaultAta",
+                    "writable": true,
+                    "pda": {
+                        "seeds": [{
+                            "kind": "account",
+                            "path": "coinCreatorVaultAuthority"
+                        }, {
+                            "kind": "account",
+                            "path": "quoteTokenProgram"
+                        }, {
+                            "kind": "account",
+                            "path": "quoteMint"
+                        }],
+                        "program": {
+                            "kind": "const",
+                            "value": [140, 151, 37, 143, 78, 36, 137, 241, 187, 61, 16, 41, 20, 142, 13, 131, 11, 90, 19, 153, 218, 255, 16, 132, 4, 142, 123, 216, 219, 233, 248, 89]
+                        }
+                    }
+                }, {
+                    "name": "coinCreatorVaultAuthority",
+                    "pda": {
+                        "seeds": [{
+                            "kind": "const",
+                            "value": [99, 114, 101, 97, 116, 111, 114, 95, 118, 97, 117, 108, 116]
+                        }, {
+                            "kind": "account",
+                            "path": "pool.coinCreator",
+                            "account": "Pool"
+                        }]
+                    }
+                }
             ],
             "args": [
                 { "name": "baseAmountIn", "type": "u64" },
