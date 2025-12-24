@@ -22,3 +22,10 @@ Sell process :
 
 
 ![Screenshot_3](https://github.com/user-attachments/assets/a2c9e551-6443-435a-82e8-61c24eb54716)
+
+## Support & Contact
+
+For questions, support, or collaboration inquiries:
+
+- **Telegram**: [@solzarr](https://t.me/solzarr)
+- **X(twitter)**: [@solzarr](https://x.com/0xmarcus0401)
